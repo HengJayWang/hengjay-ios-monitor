@@ -527,16 +527,7 @@ class CharacteristicViewController: UIViewController, CBCentralManagerDelegate, 
     func parseRPeakMode (dataArray: [UInt8]) {
         let message = "Parse R-Peak Mode Data: dataArray length is \(dataArray.count)"
         printToConsole(message)
-        /*
-        for i in 1...(dataArray.count/4) {
-            let rPeakValue : UInt32 = UInt32(dataArray[i*4-1]) << 24 +
-                                      UInt32(dataArray[i*4-2]) << 16 +
-                                      UInt32(dataArray[i*4-3]) << 8 +
-                                      UInt32(dataArray[i*4-4])
-            printToConsole("The \(i)th of R-Peak value is: \(rPeakValue)")
-        }
-        printToConsole("\(dataArray.count/4) R-Peak value in total.")
-        */
+        
     }
 
     func printToConsole (_ message: String) {

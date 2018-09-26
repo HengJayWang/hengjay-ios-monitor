@@ -11,6 +11,9 @@
 		3511665820AA873000C8D24E /* image.bin in Resources */ = {isa = PBXBuildFile; fileRef = 3511665720AA873000C8D24E /* image.bin */; };
 		3511665B20AD4AF100C8D24E /* ITRI_HDK_image.bin in Resources */ = {isa = PBXBuildFile; fileRef = 3511665920AD4AF100C8D24E /* ITRI_HDK_image.bin */; };
 		3511665C20AD4AF100C8D24E /* fota_download_manager_image.bin in Resources */ = {isa = PBXBuildFile; fileRef = 3511665A20AD4AF100C8D24E /* fota_download_manager_image.bin */; };
+		35617E93215A25A00001C1BD /* ITRI_HDK_FW_Fota_09252018_Non-Resp.bin in Resources */ = {isa = PBXBuildFile; fileRef = 35617E92215A25A00001C1BD /* ITRI_HDK_FW_Fota_09252018_Non-Resp.bin */; };
+		35617E97215A3B0A0001C1BD /* ITRI_HDK_FW_Fota_09252018_Non-Resp_filename.bin in Resources */ = {isa = PBXBuildFile; fileRef = 35617E96215A3B0A0001C1BD /* ITRI_HDK_FW_Fota_09252018_Non-Resp_filename.bin */; };
+		356B5FB1215A0230006C53F1 /* ITRI_HDK_FW_Fota_09252018.bin in Resources */ = {isa = PBXBuildFile; fileRef = 356B5FB0215A0230006C53F1 /* ITRI_HDK_FW_Fota_09252018.bin */; };
 		359CCB812099AC80000F0385 /* libBtNotify.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 359CCB802099AC80000F0385 /* libBtNotify.a */; };
 		359CCB89209C3C5A000F0385 /* BtNotify.h in Sources */ = {isa = PBXBuildFile; fileRef = 359CCB872099B961000F0385 /* BtNotify.h */; };
 		359CCB8B209C3CB5000F0385 /* libBtNotify.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 359CCB8A209C3CB4000F0385 /* libBtNotify.a */; };
@@ -33,6 +36,9 @@
 		3511665720AA873000C8D24E /* image.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = image.bin; sourceTree = "<group>"; };
 		3511665920AD4AF100C8D24E /* ITRI_HDK_image.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = ITRI_HDK_image.bin; sourceTree = "<group>"; };
 		3511665A20AD4AF100C8D24E /* fota_download_manager_image.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = fota_download_manager_image.bin; sourceTree = "<group>"; };
+		35617E92215A25A00001C1BD /* ITRI_HDK_FW_Fota_09252018_Non-Resp.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ITRI_HDK_FW_Fota_09252018_Non-Resp.bin"; sourceTree = "<group>"; };
+		35617E96215A3B0A0001C1BD /* ITRI_HDK_FW_Fota_09252018_Non-Resp_filename.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ITRI_HDK_FW_Fota_09252018_Non-Resp_filename.bin"; sourceTree = "<group>"; };
+		356B5FB0215A0230006C53F1 /* ITRI_HDK_FW_Fota_09252018.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = ITRI_HDK_FW_Fota_09252018.bin; sourceTree = "<group>"; };
 		359CCB802099AC80000F0385 /* libBtNotify.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBtNotify.a; path = Scanning/lib/libBtNotify.a; sourceTree = "<group>"; };
 		359CCB872099B961000F0385 /* BtNotify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BtNotify.h; sourceTree = "<group>"; };
 		359CCB8A209C3CB4000F0385 /* libBtNotify.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBtNotify.a; sourceTree = "<group>"; };
@@ -82,6 +88,9 @@
 			children = (
 				3511665720AA873000C8D24E /* image.bin */,
 				3511665A20AD4AF100C8D24E /* fota_download_manager_image.bin */,
+				35617E96215A3B0A0001C1BD /* ITRI_HDK_FW_Fota_09252018_Non-Resp_filename.bin */,
+				35617E92215A25A00001C1BD /* ITRI_HDK_FW_Fota_09252018_Non-Resp.bin */,
+				356B5FB0215A0230006C53F1 /* ITRI_HDK_FW_Fota_09252018.bin */,
 				3511665920AD4AF100C8D24E /* ITRI_HDK_image.bin */,
 			);
 			path = firmware;
@@ -208,7 +217,7 @@
 				TargetAttributes = {
 					7A0531731DDBF3D700A10508 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 2JR92A43DA;
+						DevelopmentTeam = 6LMNEU36K7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -238,6 +247,9 @@
 			files = (
 				7A0531821DDBF3D700A10508 /* LaunchScreen.storyboard in Resources */,
 				7A05317F1DDBF3D700A10508 /* Assets.xcassets in Resources */,
+				356B5FB1215A0230006C53F1 /* ITRI_HDK_FW_Fota_09252018.bin in Resources */,
+				35617E97215A3B0A0001C1BD /* ITRI_HDK_FW_Fota_09252018_Non-Resp_filename.bin in Resources */,
+				35617E93215A25A00001C1BD /* ITRI_HDK_FW_Fota_09252018_Non-Resp.bin in Resources */,
 				7A05317D1DDBF3D700A10508 /* Main.storyboard in Resources */,
 				3511665820AA873000C8D24E /* image.bin in Resources */,
 				3511665B20AD4AF100C8D24E /* ITRI_HDK_image.bin in Resources */,
@@ -385,7 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2JR92A43DA;
+				DEVELOPMENT_TEAM = 6LMNEU36K7;
 				INFOPLIST_FILE = Scanning/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -394,7 +406,7 @@
 					"$(PROJECT_DIR)/Scanning/lib",
 					"$(PROJECT_DIR)/Scanning/include",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Test.ReadCharacterstic;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.org.itri.hengjay.ReadCharacterstic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "./Scanning/include/ReadCharacteristic-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -407,7 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2JR92A43DA;
+				DEVELOPMENT_TEAM = 6LMNEU36K7;
 				INFOPLIST_FILE = Scanning/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -416,7 +428,7 @@
 					"$(PROJECT_DIR)/Scanning/lib",
 					"$(PROJECT_DIR)/Scanning/include",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Test.ReadCharacterstic;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.org.itri.hengjay.ReadCharacterstic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "./Scanning/include/ReadCharacteristic-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

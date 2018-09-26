@@ -27,6 +27,9 @@ class WaveformView: UIView {
     }
 
     var signal1Index: Int = 0
+    
+    var signal2Min: CGFloat = 0
+    var signal2Max: CGFloat = 0
 
     var signal2Data = [CGFloat](repeating: CGFloat(UINT16_MAX >> 1), count: 2500) {
         didSet {
@@ -104,7 +107,9 @@ class WaveformView: UIView {
         signal2.lineWidth = 1.5
         let ch2Min = signal2Data.min()!
         let ch2Scale = (signal2Data.max()! - ch2Min + 1)
-
+        signal2Min = ch2Min
+        signal2Max = ch2Scale + ch2Min - 1
+        
         signal2.move(to: CGPoint(x: origin2.x,
                                  y: origin2.y - height * 0.4 * (signal2Data[0] - ch2Min) / ch2Scale))
 

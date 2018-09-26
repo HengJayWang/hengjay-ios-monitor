@@ -145,7 +145,7 @@ class CharacteristicViewController: UIViewController, CBCentralManagerDelegate, 
     }
 
     @IBAction func writeFOTA(_ sender: UIButton) {
-        let fileName = "ITRI_HDK_image"
+        let fileName = "ITRI_HDK_FW_Fota_09252018_Non-Resp_filename"
         let bundlePath = Bundle.main.url(forResource: fileName, withExtension: "bin")
         printToConsole("bundlePath of \(fileName) is " + (bundlePath?.path)!)
 
@@ -361,7 +361,8 @@ class CharacteristicViewController: UIViewController, CBCentralManagerDelegate, 
                 (byteArray[2] == 84) && (byteArray[3] == 73)
 
             if lastPressBtn == 1 {
-                printToConsole("signal Max is \(waveformArea.signal1Max), min is \(waveformArea.signal1Min)")
+                printToConsole("signal 1 Max : \(waveformArea.signal1Max), Min : \(waveformArea.signal1Min)")
+                printToConsole("signal 2 Max : \(waveformArea.signal2Max), Min : \(waveformArea.signal2Min)")
             }
             if  headerCheck && byteArray[5] == 171 {
                 mode = Int(byteArray[4])
@@ -520,6 +521,7 @@ class CharacteristicViewController: UIViewController, CBCentralManagerDelegate, 
             waveformArea.pushSignal2BySliding(newValue: CGFloat(ch2Value))
             signal2Value.text = String(ch2Value)
         }
+        printToConsole("signal 2 max: \(waveformArea.signal2Max), min : \(waveformArea.signal2Min)")
     }
 
     func parseRPeakMode (dataArray: [UInt8]) {
